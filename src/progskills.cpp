@@ -1,5 +1,9 @@
 #include "main.h"
 
+const int DRIVE_SPEED = 110;
+const int TURN_SPEED  = 90;
+const int SWING_SPEED = 90;
+
 void drive(int distance, double speed_factor) {
     chassis.set_drive_pid(distance, DRIVE_SPEED*speed_factor, true);
     chassis.wait_drive();
@@ -20,10 +24,10 @@ void clamp(int i, int delay_time, bool activation) {
         //do nothing
     }
     pros::delay(delay_time);
-    
+
 }
 
-void main() { //code to test the first part of the prog skills to put 2 mogos on the platform
+void skillspath() { //code to test the first part of the prog skills to put 2 mogos on the platform
 
     clamp(0, 100, true); //mogoclamp
     drive(5, 1.0);
