@@ -48,7 +48,8 @@
 #include "conveyor.hpp"
 #include "lift.hpp"
 #include "mogoclamp.hpp"
-#include "liftclamp.hpp"    
+#include "liftclamp.hpp"
+#include "progskills.hpp"    
 
 /**
  * If you find doing pros::Motor() to be tedious and you'd prefer just to do
